@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://cdpn.io/Ashneet/fullpage/ExgREGE?editors=1010 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - A Pen by Ashneet Kaur Dhani</title>
+  
+  
+  
+  
+<style>
+div
+	{
+		margin: 10px;
+		width: 48%;
+	}
+	#showParagraph1 , #showParagraph2
+	{
+		width: 100%;
+		margin: 10px;
+	}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  
+
+
+	<title>Project C80</title>
+
+
+	<center>
+		<h1>Make paragraphs from input boxes using join function</h1>
+		<div style="float: left;">
+		<h4>
+			<span>1. </span>
+			<input type="text" id="div1_input_box_1" placeholder="Input box 1">
+			<br><br>
+			<span>2. </span>
+			<input type="text" id="div1_input_box_2" placeholder="Input box 2">
+			<br><br>
+			<span>3. </span>
+			<input type="text" id="div1_input_box_3" placeholder="Input box 3">
+			<br><br>
+			<span>4. </span>
+			<input type="text" id="div1_input_box_4" placeholder="Input box 4">
+			<br><br>
+			<span>5. </span>
+			<input type="text" id="div1_input_box_5" placeholder="Input box 5">
+			<br><br>
+			<span>6. </span>
+			<input type="text" id="div1_input_box_6" placeholder="Input box 6">
+		</h4>
+		<button onclick="getParagraph1()">Get paragraph 1</button>
+		</div>
+
+		<div style="float: right;">
+		<h4>
+			<span>1. </span>
+			<input type="text" id="div2_input_box_1" placeholder="Input box 1">
+			<br><br>
+			<span>2. </span>
+			<input type="text" id="div2_input_box_2" placeholder="Input box 2">
+			<br><br>
+			<span>3. </span>
+			<input type="text" id="div2_input_box_3" placeholder="Input box 3">
+			<br><br>
+			<span>4. </span>
+			<input type="text" id="div2_input_box_4" placeholder="Input box 4">
+			<br><br>
+			<span>5. </span>
+			<input type="text" id="div2_input_box_5" placeholder="Input box 5">
+			<br><br>
+			<span>6. </span>
+			<input type="text" id="div2_input_box_6" placeholder="Input box 6">
+		</h4>
+		<button onclick="getParagraph2()">Get paragraph 2</button>
+		</div>
+
+	</center>
+<br>
+		<h1 id="showParagraph1">ih. wwws. ddsddd. . . </h1>
+		<h1 id="showParagraph2"></h1>
+
+
+
+    <script src="./stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js.download"></script>
+
+  
+      <script id="rendered-js">
+function getParagraph1()
+{
+  var inputs = [];
+  for (var i = 1; i <= 6; i++)
+  {if (window.CP.shouldStopExecution(0)) break;
+    inputs.push(document.getElementById("div1_input_box_" + i).value);
+  }window.CP.exitedLoop(0);
+  document.getElementById("showParagraph1").innerHTML = inputs.join(". ");
+}
+
+function getParagraph2()
+{
+  var inputs = [];
+  for (var i = 1; i <= 6; i++)
+  {if (window.CP.shouldStopExecution(1)) break;
+    inputs.push(document.getElementById("div2_input_box_" + i).value);
+  }window.CP.exitedLoop(1);
+  document.getElementById("showParagraph2").innerHTML = inputs.join(". ");
+}
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+
+
+ 
+</body></html>
